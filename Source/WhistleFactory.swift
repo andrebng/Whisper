@@ -120,7 +120,7 @@ open class WhistleFactory: UIViewController {
           attributes: [NSAttributedStringKey.font: titleLabel.font],
           context: nil
         )
-      titleLabelHeight = CGFloat(neededDimensions.size.height)
+      titleLabelHeight = CGFloat(neededDimensions.size.height + 10)
       titleLabel.numberOfLines = 0 // Allows unwrapping
 
       if titleLabelHeight < defaultHeight {
